@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="buz-vl-EXJ">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="notosans_regular.ttf">
+            <string>NotoSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Connect Via Bluetooth View Controller-->
+        <scene sceneID="hGd-j4-9Tk">
+            <objects>
+                <viewController storyboardIdentifier="ConnectViaBluetoothViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="buz-vl-EXJ" customClass="ConnectViaBluetoothViewController" customModule="CirrentApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YXa-HT-s3W"/>
+                        <viewControllerLayoutGuide type="bottom" id="8xo-lJ-MuP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5a3-KK-2O7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBg" translatesAutoresizingMaskIntoConstraints="NO" id="j61-X0-erC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cx1-Z6-dRe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingBg" translatesAutoresizingMaskIntoConstraints="NO" id="VaB-nH-Ygf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="3yC-4P-BKc">
+                                <rect key="frame" x="106.5" y="210.5" width="107" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="BZv-dW-gCy"/>
+                                    <constraint firstAttribute="height" constant="107" id="NKC-Zk-LMQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting via bluetooth…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhH-Mn-L1u">
+                                <rect key="frame" x="24" y="338.5" width="272" height="19.5"/>
+                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j61-X0-erC" secondAttribute="trailing" id="40h-X7-aTI"/>
+                            <constraint firstAttribute="bottom" secondItem="j61-X0-erC" secondAttribute="bottom" id="4Fs-1p-uBG"/>
+                            <constraint firstItem="jhH-Mn-L1u" firstAttribute="top" secondItem="3yC-4P-BKc" secondAttribute="bottom" constant="21" id="7gZ-2A-NsY"/>
+                            <constraint firstAttribute="bottom" secondItem="Cx1-Z6-dRe" secondAttribute="bottom" id="AG6-xc-7oe"/>
+                            <constraint firstAttribute="trailing" secondItem="VaB-nH-Ygf" secondAttribute="trailing" id="CiH-to-vXt"/>
+                            <constraint firstItem="j61-X0-erC" firstAttribute="top" secondItem="5a3-KK-2O7" secondAttribute="top" id="IQI-aH-p9e"/>
+                            <constraint firstItem="Cx1-Z6-dRe" firstAttribute="leading" secondItem="5a3-KK-2O7" secondAttribute="leading" id="J7u-sa-x1f"/>
+                            <constraint firstItem="j61-X0-erC" firstAttribute="leading" secondItem="5a3-KK-2O7" secondAttribute="leading" id="YL3-Tb-0EV"/>
+                            <constraint firstItem="3yC-4P-BKc" firstAttribute="centerY" secondItem="5a3-KK-2O7" secondAttribute="centerY" constant="-20" id="YUV-Ja-rZi"/>
+                            <constraint firstItem="VaB-nH-Ygf" firstAttribute="leading" secondItem="5a3-KK-2O7" secondAttribute="leading" id="aun-zs-EV0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jhH-Mn-L1u" secondAttribute="trailing" constant="8" id="eFK-Ud-JJs"/>
+                            <constraint firstAttribute="bottom" secondItem="VaB-nH-Ygf" secondAttribute="bottom" id="iLM-2X-cSN"/>
+                            <constraint firstAttribute="trailing" secondItem="Cx1-Z6-dRe" secondAttribute="trailing" id="izJ-ci-cJy"/>
+                            <constraint firstItem="VaB-nH-Ygf" firstAttribute="top" secondItem="5a3-KK-2O7" secondAttribute="top" id="mR2-Rk-1Ii"/>
+                            <constraint firstItem="jhH-Mn-L1u" firstAttribute="leading" secondItem="5a3-KK-2O7" secondAttribute="leadingMargin" constant="8" id="tWv-nS-XyB"/>
+                            <constraint firstItem="3yC-4P-BKc" firstAttribute="centerX" secondItem="5a3-KK-2O7" secondAttribute="centerX" id="vaN-Ai-Auq"/>
+                            <constraint firstItem="jhH-Mn-L1u" firstAttribute="centerX" secondItem="5a3-KK-2O7" secondAttribute="centerX" id="x7Y-aA-7xu"/>
+                            <constraint firstItem="Cx1-Z6-dRe" firstAttribute="top" secondItem="5a3-KK-2O7" secondAttribute="top" id="zKl-Ib-HuD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DRp-iN-ttV"/>
+                    </view>
+                    <connections>
+                        <outlet property="connectingToLabel" destination="jhH-Mn-L1u" id="gOQ-2a-Bip"/>
+                        <outlet property="loadingImageView" destination="3yC-4P-BKc" id="JCC-W0-nnQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IB4-g3-z2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="-96"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loading" width="111" height="111"/>
+        <image name="loadingBg" width="375" height="667"/>
+        <image name="mainBg" width="375" height="667"/>
+    </resources>
+</document>
